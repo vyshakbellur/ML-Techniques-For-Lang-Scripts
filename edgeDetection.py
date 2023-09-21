@@ -8,4 +8,10 @@ print(skimage.__version__)
 sample_image = np.random.random([300,300])
 
 plt.imshow(sample_image)
+
+
+al = skimage.io.imread("./DataSet/Croatian/A.png", as_gray=True)
+plt.imshow(al)
+print(al.shape)
+
 plt.show()
