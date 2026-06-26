@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "feedelligence"
+version = "2.0.0"
+description = "FeedelLigence: Cross-Modal Script Phylogenetics via Siamese and Multimodal Deep Networks"
+authors = [{name = "Vyshak Athreya", email = "vyshakathreya@gmail.com"}]
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = ["digital-humanities", "computational-linguistics", "script-analysis", "siamese-network", "phylogenetics"]
+dependencies = [
+    "torch>=2.0.0",
+    "torchvision>=0.15.0",
+    "Pillow>=9.0.0",
+    "numpy>=1.20.0",
+    "scipy>=1.9.0",
+    "matplotlib>=3.5.0",
+    "scikit-learn>=1.2.0"
+]
+
+[project.optional-dependencies]
+dev = ["black", "isort", "mypy", "pytest"]
